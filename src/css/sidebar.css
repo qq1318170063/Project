@@ -1,0 +1,204 @@
+.sidebar {
+  width: 40px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 505;
+  background: #4c4c4c;
+}
+
+.sidebar .iconfont {
+  font-size: 20px;
+  color: #c69a62;
+}
+
+.sidebar .sidebar_top {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  margin-top: -190px;
+  z-index: 2;
+}
+
+.sidebar  .sidebar_common {
+  position: relative;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 9;
+}
+.sidebar .sidebar_common  .sidebar_account_a{
+  line-height: 38px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+}
+.sidebar  .sidebar_common .myaccount{
+    display: none;
+    position: absolute;
+    top: 0px;
+    width: 90px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #ddd;
+    background-color: #494949;
+    opacity: 0;
+    right: 70px;
+    font-size: 14px;
+}
+.sidebar  .sidebar_common .myaccount .lingxing{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 16px;
+  top: 10px;
+  right: -8px;
+  color: #494949;
+}
+
+
+.sidebar .sidebar_top .sidecart {
+  padding: 15px 0;
+  border-bottom: 1px solid #666;
+  border-top: 1px solid #666;
+  margin: 10px auto;
+  height: 90px;
+  text-align: center;
+}
+
+.sidebar .sidebar_top .sidecart .sidecart_content {
+  width: 28px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: normal;
+  line-height: 15px;
+}
+
+.sidebar .sidebar_top .sidecart .sidecart_content a {
+  color: #fff;
+  font-size: 12px;
+  display: block;
+  width: 20px;
+  margin: 0 auto;
+}
+
+.sidebar .sidebar_top .sidecart .sidecart_content a i {
+  margin-bottom: 3px;
+  display: block;
+}
+
+.sidebar .sidebar_top .sidecart .sidecart_content .sidebar_b {
+  background-color: #ec3e7d;
+  line-height: 13px;
+  padding: 0 3px;
+  min-width: 12px;
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.sidebar .sidebar_top .sidecart .sidecart_content .sidebar_b .sidebar_num {
+  color: #fff;
+  font-size: 9px;
+  font-weight: normal;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.sidebar .sidebar_top .sidebar_collect {
+  position: relative;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 9;
+}
+
+.sidebar .sidebar_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.sidebar .sidebar_bottom .sidebar_service {
+  position: relative;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 9;
+}
+.sidebar .sidebar_service  .sidebar_aimg {
+  right: 120px;
+  opacity: 1;
+  margin-top: -50px;
+  display: none;
+  position: absolute;
+  top: 0px;
+  width: 90px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  color: #ddd;
+  background-color: #494949;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+.sidebar .sidebar_service  .sidebar_aimg  .lingxing1{
+  right: -58px;
+  top: 10px;
+  z-index: -1;
+  margin-top: 50px;
+  color: #fff;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 16px;
+}
+.sidebar .sidebar_bottom .sidebar_service .sidebar_a {
+  text-align: center;
+}
+.sidebar .sidebar_bottom .sidebar_service i {
+  width: 38px;
+  height: 38px;
+  display: block;
+  line-height: 38px;
+}
+
+.sidebar .sidebar_bottom .sidebar_service .livechat {
+  background-image: url(../images/livechat.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sidebar .sidebar_bottom .backtop {
+  /* visibility: hidden; */
+  padding: 15px 0 0 0;
+  text-align: center;
+  
+}
+
+.sidebar .sidebar_bottom .backtop a {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 10px;
+  color: #fff;
+}
+
+.sidebar .sidebar_bottom .backtop a .sanjiao {
+  font-size: 8px;
+  display: block;
+}

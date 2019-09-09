@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>莎莎官网列表页</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <style>
+        .all_categories_item {
+            display: none;
+        }
+
+        .all_categories:hover .all_categories_item {
+            display: block;
+        }
+    </style>
+</head>
+<!-- style="overflow: scroll;overflow-y: hidden" -->
+
+<body>
+    <div id="top">
+        <!-- <div class="header">
+            <div class="main_content">
+                <div class="login_bar">
+                    <span>欢迎光临莎莎网!</span>
+                    <a href="###" style="margin-left: 10px;">登录</a>
+                    <span class="span_or">或</span>
+                    <a href="###">免费注册</a>
+                </div>
+                <div class="right_nav">
+                    <ul>
+                        <li><a href="">
+                                <i class="iconfont">&#xe654;</i>我的账户<i class="iconfont icon_jt">&#xe608;</i>
+                            </a>
+                            <ul class="ul_none">
+                                <li><a href="">我的订单</a></li>
+                                <li><a href="">我的积分</a></li>
+                                <li><a href="">我的优惠券</a></li>
+                                <li><a href="">我的收藏</a></li>
+                                <li><a href="">我的评价</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">
+                                <i class="iconfont">&#xe61a;</i> 我的购物车</a>
+                            <div class="sidebar_box">
+                                <p>购物车中还没有商品，<br>快去挑选心爱的商品吧
+                                </p>
+                            </div>
+                        </li>
+                        <li><a href="">
+                                <i class="iconfont">&#xe66b;</i>我的收藏</a></li>
+                        <li><a href="">我的站内信</a></li>
+                        <li><a href="">积分中心</a></li>
+                        <li><a href="">Global site</a></li>
+                        <li><a href="">关注我们</a>
+                            <a href="###" class="header_img header_imgone"><img src="../images/header_weibo.png" alt="">
+                                <div class="header_imgnone">
+                                    <img src="../images/header_imgweibo.jpg" alt="" class="imgone">
+                                </div>
+                            </a>
+                            <a href="###" class="header_img header_imgtwo"><img src="../images/header_weixin.png"
+                                    alt="">
+                                <div class="header_imgnone">
+                                    <img src="../images/header_imgweixin.jpg" alt="" class="imgtwo">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- <div class="header_main">
+        <div class="main_content">
+            <div class="sasalogo">
+                <img src="../images/logo_sasa.png" alt="">
+            </div>
+            <div class="search clearfix">
+                <div class="search_frame">
+                    <input type="text" class="search_input" placeholder="防晒">
+                </div>
+                <input type="button" class="btn" value="搜索">
+                <div class="a_label">
+                    <a href="">面膜</a>
+                    <a href="">欧莱雅</a>
+                    <a href="">SK-ll</a>
+                    <a href="">口红</a>
+                    <a href="">安耐晒</a>
+                    <a href="">香水</a>
+                    <a href="">雅诗兰黛</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="navtop">
+    </div>
+
+    <div class="backgroundbox ">
+        <div class="pages clearfix">
+            <div class="h_search"></div>
+            <div class="listbox ">
+                <div class="listheader">
+                    <div class="listheader_c">
+                        <!-- <a href="###">重置筛选项</a> -->
+                    </div>
+                    <dl class="clearfix">
+                        <dt>已选</dt>
+                        <dd></dd>
+                    </dl>
+                </div>
+                <div class="all_list clearfix">
+                    <dl class="all_list_dl clearfix">
+                        <dt class="all_list_dt">分类</dt>
+                        <dd class="all_list_dd01">
+                            <a href="###"><span></span><i></i></a>
+                        </dd>
+                        <dd class="all_list_dd02">
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">精华素/疗程</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">日霜</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">晚霜</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">乳液</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">眼霜</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">眼胶</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">眼部精华/疗程</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">润唇膏</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">防晒乳液</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">防晒啫喱</a>
+                                </span>
+                            </span>
+                        </dd>
+                    </dl>
+                    <dl class="all_list_dl clearfix">
+                        <dt class="all_list_dt">品牌</dt>
+                        <dd class="all_list_dd01">
+                            <a href="###"><span></span><i></i></a>
+                        </dd>
+                        <dd class="all_list_dd02">
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">伊丽莎白·雅顿</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">瑞士葆丽美</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">泉肌</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">海蓝之谜</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">奇士美</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">倩碧</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">eleaner</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">圣罗兰</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">兰蔻</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">sk-ll</a>
+                                </span>
+                            </span>
+                        </dd>
+                    </dl>
+                    <dl class="all_list_dl clearfix">
+                        <dt class="all_list_dt">功效</dt>
+                        <dd class="all_list_dd01">
+                            <a href="###"><span></span><i></i></a>
+                        </dd>
+                        <dd class="all_list_dd02">
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">明亮肤色</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">修饰毛孔</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">均匀肤色</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">滋润</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">控油</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">保湿</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">遮瑕</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">亮白</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">无惧汗油</a>
+                                </span>
+                            </span>
+                            <span class="dd_spanout">
+                                <span class="dd_spanint">
+                                    <a href="###">紧致肌肤</a>
+                                </span>
+                            </span>
+                        </dd>
+                    </dl>
+                    <dl class="all_list_dl clearfix">
+                        <dt class="all_list_dt">筛选</dt>
+                        <dd class="all_list_dd01">
+                            <a href="###"><span></span><i></i></a>
+                        </dd>
+                        <dd>
+                            <p>价格：<input type="text" name="" id="" placeholder="￥" class="tex1">-<input type="text"
+                                    placeholder="￥" class="tex2"><input type="button" value="查找" class="price-btn">
+                                <span><input type="text" placeholder="输入关键字搜索物品" class="select_text"><input
+                                        type="button" class="select-btn" value="搜索"></span>
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+                <!-- <div class="screen_morebox">
+                    <a href="">
+                         <span>显示更多筛选项</span> 
+                       
+                        <i></i>
+                    </a>
+                </div>  -->
+
+            </div>
+            <div id="sortbarbox" class="clearfix">
+                <div class="sortbar clearfix">
+                    <div class="sort_item ">
+                        <span class="sort_span">排序</span>
+                        <a href="###">
+                            <em>
+                                销售
+                                <!-- <span class="desc"></span> -->
+                            </em>
+                        </a>
+                        <a href="###">
+                            <em>
+                                人气
+                                <!-- <span class="desc"></span> -->
+                            </em>
+                        </a>
+                        <a href="###">
+                            <em>
+                                评分
+                                <!-- <span class="desc"></span> -->
+                            </em>
+                        </a>
+                        <a href="###">
+                            <em>
+                                上架时间
+                                <!-- <span class="desc"></span> -->
+                            </em></a>
+                        <a href="###" class="a_order" index="up">
+                            <em>
+                                价格
+                                <span class="desc"></span>
+                            </em>
+                        </a>
+                    </div>
+                </div>
+                <div class="showmode clearfix">
+                    <input type="checkbox">
+                    <label for="">只看特卖</label>
+                </div>
+                <div class="mini_page">
+                    <!-- <span class="page_span"> -->
+                    <!--<a href="###" class="prve">
+                            <i class="icon">
+                                <</i> </a> <span class="">1</span>/
+                    <span>10</span>
+                    <a href="###" class="next">
+                        <i class="icon">></i>
+                    </a>
+                    </span> -->
+                </div>
+            </div>
+
+            <div id="show" class="clearfix">
+                <ul class="show_ul">
+                    <!-- <li class="show_li">
+                        <div class="showbox">
+                            <div class="showbox_right">
+                                <dl class="showbox_right_dl">
+                                    <dd></dd>
+                                    <dd></dd>
+                                    <dd></dd>
+                                    <dd></dd>
+                                </dl>
+                            </div>
+                            <div class="showbox_item">
+                                <div class="showbox_top">
+                                    <b><img src="../images/showimg.png" alt=""></b>
+                                    <dl>
+                                        <dd>
+                                            <i><img src="../images/hanguo.png" alt=""></i>
+                                            韩国品牌
+                                        </dd>
+                                    </dl>
+
+                                    <a href="###">
+                                        <img src="../images/liimg.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="show_price">
+                                    <span class="count_price">6.8折</span>
+                                    <span class="price">￥219.0</span>
+                                    <span class="dis_price">
+                                        <del>￥320.0</del>
+                                    </span>
+                                </div>
+                                <div class="showbox_middle">
+                                    <div class="showbox_info">
+                                        <p class="info_p1">
+                                            <b class="yew">
+                                                香港特快直送 零扣关 包税
+                                            </b>
+                                            <a href="###">倩碧</a>
+                                        </p>
+                                        <p class="info_p2">
+                                            特效
+                                            <font color="#ec3e7d">防晒</font>
+                                            隔离箱SPf40
+                                        </p>
+                                        <p class="info_p3">
+                                            40毫升
+                                        </p>
+                                    </div>
+                                <!-- </div> -->
+                                 <div class="btn_buy"> 
+                                    <!-- <a href="###" class="btn_a">
+                                        <span class="btnspan"><span>立即抢购</span></span>
+                                    </a> -->
+                                </div>
+                            <!-- </div>
+                        </div>
+                    </li>  -->
+
+                    <!-- <li class="show_li last_li">
+                        <b class="bottom_tips"></b>
+                        <a href="###">
+                            <i></i>
+                            <p class="nextpage">下一页</p>
+                            <p class="nextinfo">显示下一页效果</p>
+                        </a>
+                    </li> -->
+
+                </ul>
+
+
+
+                <div class="pagebox clearfix">
+                    <span class="prev">
+                        <i>
+                            < </i> </span> <div class="pageview">
+                                <!-- <a href="###" class="page_a">1</a>
+                    <a href="###" class="page_a">2</a>
+                    <a href="###" class="page_a">3</a> -->
+                </div>
+                <span class="next">
+                    <i>
+                        ></i>
+                </span>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- 侧边栏导航 -->
+    <div id="right_sidebar">
+
+    </div>
+    <!-- 尾部 -->
+    <div id="bottom_sidebar">
+        <!-- <div class="main_content">
+            <div class="footer_left">
+                <div class="footer_left_item">
+                    <dl class="footer_info">
+                        <dt>
+                            <a href="">常见问题</a>
+                        </dt>
+                        <dd>
+                            <a href="">常见问题</a>
+                        </dd>
+                        <dd><a href="">联络我们</a></dd>
+                    </dl>
+                    <dl class="footer_info">
+                        <dt>
+                            <a href="">付款方式</a>
+                        </dt>
+                        <dd><a href="">在线支付</a></dd>
+                        <dd><a href="">积分支付</a></dd>
+                    </dl>
+                    <dl class="footer_info">
+                        <dt>
+                            <a href="">配送方式</a>
+                        </dt>
+                        <dd><a href="">配送说明</a></dd>
+                        <dd><a href="">追踪订单</a></dd>
+                    </dl>
+                    <dl class="footer_info">
+                        <dt>
+                            <a href="">售后服务</a>
+                        </dt>
+                        <dd><a href="">正品保证</a></dd>
+                        <dd><a href="">价格承诺</a></dd>
+                        <dd><a href="">30日退换保证</a></dd>
+                        <dd><a href="">退款程序</a></dd>
+                        <dd><a href="">更改订单</a></dd>
+                    </dl>
+                    <dl class="footer_info">
+                        <dt>
+                            <a href="">莎莎会员</a>
+                        </dt>
+                        <dd><a href="">积分奖赏</a></dd>
+                        <dd><a href="">VIP会员计划</a></dd>
+                    </dl>
+                </div>
+                <div>
+                    <img src="../images/foot_brand.jpg" alt="">
+                </div>
+            </div>
+            <div class="footer_right">
+                <div class="footer_weibo">
+                    <img src="../images/footer_weibo.jpg" alt="">
+                    <p><b>莎莎网官方微博</b></p>
+                    <p><b>@莎莎网</b></p>
+                </div>
+                <div class="footer_weixin">
+                    <img src="../images/footer_weixin.jpg" alt="">
+                    <p>莎莎网官方微信</p>
+                    <p>ID:hksasadotcom</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_link">
+            <div class="footer_link_item">
+                <a href="">关于莎莎</a>
+                <a href="">|</a>
+                <a href="">使用条款</a>
+                <a href="">|</a>
+                <a href="">隐私策略</a>
+                <a href="">|</a>
+                <a href="">招商合作</a>
+                <a href="">|</a>
+                <a href="">帮助中心</a>>
+                <a href="">|</a>
+                <a href="">港澳店铺推广</a>
+                <a href="">|</a>
+                <a href="">联络我们</a>
+                <a href="">|</a>
+                <a href="">其他送货地区</a>
+                <p class="footer_copyright">
+                    Copyright 2000-2019 Sa Sa dot Com Limited 版权所有莎莎国际控股有限公司成员
+                </p>
+            </div>
+        </div> -->
+    </div>
+</body>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/list.js"></script>
+
+</html>

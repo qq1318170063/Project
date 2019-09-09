@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>404 Error</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>An 404 error occurred.</h1>
+<p>Sorry, on ecnfs1: the page you are looking for is not find.Please visit <a href="http://www.sasa.com">http://www.sasa.com&nbsp;&nbsp;&nbsp;>>>>>></a><br/>
+</p>
+</body>
+</html>

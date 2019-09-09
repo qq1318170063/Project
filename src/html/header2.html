@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="main_content">
+            <div class="login_bar">
+                <span>欢迎光临莎莎网!</span>
+                <a href="###" style="margin-left: 10px;" class="login-btn">登录</a>
+                <span class="span_or">或</span>
+                <a href="###" class="reg-btn">免费注册</a>
+            </div>
+            <div class="right_nav">
+                <ul>
+                    <li><a href="###">
+                            <i class="iconfont">&#xe654;</i>我的账户<i class="iconfont icon_jt">&#xe608;</i>
+
+                        </a>
+                        <ul class="ul_none">
+                            <li><a href="">我的订单</a></li>
+                            <li><a href="">我的积分</a></li>
+                            <li><a href="">我的优惠券</a></li>
+                            <li><a href="">我的收藏</a></li>
+                            <li><a href="">我的评价</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="###" class=" mycart">
+                            <i class="iconfont">&#xe61a;</i> 我的购物车</a>
+                        <!-- <div class="sidebar_box">
+                            <p>购物车中还没有商品，<br>快去挑选心爱的商品吧
+                            </p>
+                        </div> -->
+                    </li>
+                    <li><a href="###" class="li_a">
+                            <i class="iconfont">&#xe66b;</i>我的收藏</a></li>
+                    <li><a href="">我的站内信</a></li>
+                    <li><a href="">积分中心</a></li>
+                    <li><a href="">Global site</a></li>
+                    <li><a href="">关注我们</a>
+                        <a href="###" class="header_img header_imgone"><img src="images/header_weibo.png" alt="">
+                            <div class="header_imgnone">
+                                <img src="images/header_imgweibo.jpg" alt="" class="imgone">
+                            </div>
+                        </a>
+                        <a href="###" class="header_img header_imgtwo"><img src="images/header_weixin.png" alt="">
+                            <div class="header_imgnone">
+                                <img src="images/header_imgweixin.jpg" alt="" class="imgtwo">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header_main">
+            <div class="main_content">
+                <div class="sasalogo">
+                   <a href="index.html"><img src="images/logo_sasa.png" alt=""></a> 
+                </div>
+                <div class="search clearfix">
+                    <div class="search_frame">
+                        <input type="text" class="search_input" placeholder="防晒">
+                    </div>
+                    <input type="button" class="btn" value="搜索">
+                    <div class="a_label">
+                        <a href="">面膜</a>
+                        <a href="">欧莱雅</a>
+                        <a href="">SK-ll</a>
+                        <a href="">口红</a>
+                        <a href="">安耐晒</a>
+                        <a href="">香水</a>
+                        <a href="">雅诗兰黛</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+    $(function(){
+        let url2 = window.location.href; //获取当前退出的地址
+        function chushi() {
+            let name = getCookie('name');
+            if (name) {
+               $('.login_bar').html(`<span>欢迎光临莎莎网!</span>
+                <a href="###" style="margin-left: 10px;">${name}</a>
+                <span class="span_or"></span>
+                <a href="###" class="quit">退出</a>`) ;
+            } else {
+                $('.login_bar').html(`<span>欢迎光临莎莎网!</span>
+                <a href="###" style="margin-left: 10px;" class="login-btn">登录</a>
+                <span class="span_or">或</span>
+                <a href="###" class="reg-btn">免费注册</a>`) ;
+            }
+        }
+        chushi();
+        $('.login_bar').on('click','.quit',function(){
+            if($(this).html('退出')){
+                alert('你确定要退出吗?');
+                removeCookie('name');
+                // $(this).html('登录').addClass('login-btn');
+                localStorage.setItem('url', url2);
+            }else{
+                location.href = 'html/login.html';
+            }
+            chushi();
+        });
+        
+        $('.btn').click(function(){
+            window.open('html/list.html');
+        });
+
+        $('.login_bar').on('click', '.login-btn' ,function(){
+            window.open('html/login.html');
+        });
+        $('.login_bar').on('click','.reg-btn',function(){
+            window.open('html/reg.html');
+        });
+
+        $('.mycart').click(function(){
+            window.open('html/scart.html');
+        });
+    });
+</script>
+</html>

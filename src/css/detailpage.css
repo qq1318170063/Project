@@ -1,0 +1,439 @@
+.bgcolor {
+  background: #f2f2f2;
+}
+
+.bgcolor .main_content {
+  background-color: #fff;
+  margin-bottom: 40px;
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.top {
+  width: 1200px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  margin: 15px auto;
+}
+
+.top a {
+  color: #888888;
+  font-size: 14px;
+}
+
+.con-l {
+  width: 440px;
+  height: 551px;
+  padding-bottom: 18px;
+  position: relative;
+  margin-left: 40px;
+}
+
+.con-l .Large {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.con-l .Large img {
+  width: 100%;
+  height: 100%;
+}
+
+.con-l .Large .magnify {
+  width: 150px;
+  height: 150px;
+  background-image: url(../images/move-box.png);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: none;
+  cursor: move;
+}
+
+.con-l .enlargement {
+  width: 400px;
+  height: 400px;
+  background: red;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  position: absolute;
+  z-index: 500;
+  top: 0px;
+  left: 420px;
+  overflow: hidden;
+  display: none;
+}
+
+.con-l .enlargement img {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.con-l .thumbnail {
+  width: 400px;
+  height: 80px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.con-l .thumbnail .leftinput {
+  float: left;
+  width: 20px;
+  height: 60px;
+  margin-right: 5px;
+  cursor: no-drop;
+}
+
+.con-l .thumbnail .leftinput i {
+  display: inline-block;
+  width: 13px;
+  height: 30px;
+  margin-top: 17px;
+  background: url(../images/d-icon.png);
+  background-position: -177px -20px;
+}
+
+.con-l .thumbnail .mains {
+  float: left;
+  width: 350px;
+  overflow: hidden;
+  position: absolute;
+  left: 25px;
+}
+
+.con-l .thumbnail .mains .mix {
+  width: 700px;
+  height: 60px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.con-l .thumbnail .mains .mix li {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin: 0 5px;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid #e5cbb2;
+}
+
+.con-l .thumbnail .mains .mix li img {
+  width: 100%;
+  height: 100%;
+}
+
+.con-l .thumbnail .rightinput {
+  float: right;
+  width: 20px;
+  height: 60px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.con-l .thumbnail .rightinput i {
+  display: inline-block;
+  width: 13px;
+  height: 30px;
+  margin-top: 17px;
+  background: url(../images/d-icon.png);
+  background-position: -193px -20px;
+}
+
+.con-l .spuid {
+  padding: 0 20px;
+}
+
+.con-l .spuid .spuid-l {
+  color: #666;
+  font-size: 12px;
+}
+
+.con-l .spuid .spuid-r i {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 4px 0 0 4px;
+  overflow: hidden;
+  background: url(../images/d-icon.png);
+}
+
+.con-l .spuid .spuid-r .i1 {
+  background-position: -125px -1px;
+}
+
+.con-l .spuid .spuid-r .i2 {
+  background-position: -148px -14px;
+}
+
+.con-l .spuid .spuid-r span {
+  color: #666;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 3px;
+  padding: 0 3px;
+}
+
+.main_item {
+  width: 570px;
+  padding-top: 25px;
+  margin-right: 40px;
+  float: right;
+}
+
+.main_item .product_title {
+  padding-bottom: 30px;
+  line-height: 1.2;
+  text-align: left;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.main_item .product_title .iconfont {
+  color: #c29b60;
+  font-size: 25px;
+  vertical-align: super;
+}
+
+.main_item .price_p {
+  font-size: 18px;
+  line-height: 26px;
+  font-size: 26px;
+  padding-bottom: 20px;
+  color: #ec3e7d;
+}
+
+.main_item .price_p del {
+  color: #959595;
+  font-size: 14px;
+}
+
+.main_item .price_p span {
+  color: #cb9966;
+  font-size: 16px;
+}
+
+.main_item .rulewrap {
+  padding: 18px 0 14px;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 5px;
+  height: 153px;
+}
+
+.main_item .rulewrap p {
+  font-size: 14px;
+  height: 40px;
+  color: #959595;
+}
+
+.main_item .rulewrap p span {
+  line-height: 30px;
+  color: #333;
+  margin-left: 10px;
+}
+
+.main_item ul li {
+  margin-bottom: 20px;
+  clear: both;
+  padding: 5px 0;
+}
+
+.main_item ul li .quantity_span {
+  width: 74px;
+}
+
+.main_item ul li .quantity_span a {
+  display: inline-block;
+  width: 20px;
+  height: 21px;
+  overflow: hidden;
+  vertical-align: middle;
+  border: 1px solid #f2f2f2;
+  text-align: center;
+  font: 14px/22px simsun,serif;
+  background: #f2f2f1;
+  font-weight: bold;
+  color: #5b636b;
+}
+
+.main_item ul li .quantity_span .input_num {
+  width: 30px;
+  height: 21px;
+  line-height: 21px;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  border: 1px solid #f2f2f2;
+  text-align: center;
+}
+
+.main_item ul li p {
+  height: 24px;
+  color: #888888;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+.main_item ul li .snap_btn {
+  margin: -10px 20px 0 0;
+  width: 120px;
+  text-align: center;
+  background: #8f8f8f;
+  padding: 0px 20px;
+  border: none;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container .track_box {
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 26px;
+  width: 253px;
+  float: left;
+}
+
+.container .track_box h2 {
+  height: 50px;
+  line-height: 50px;
+  border-left: 5px solid #c69a62;
+  border-bottom: 1px solid #ebebeb;
+  color: #585c65;
+  font-size: 16px;
+  padding-left: 12px;
+  position: relative;
+}
+
+.container .track_box ul li {
+  height: 69px;
+  border-top: 1px dashed #d4d4d4;
+  padding: 20px 10px;
+  margin-top: -1px;
+}
+
+.container .track_box ul li .aimg {
+  display: block;
+  width: 69px;
+  height: 69px;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+}
+
+.container .track_box ul li .aimg img {
+  max-width: 69px;
+  max-height: 69px;
+}
+
+.container .track_box ul li .product_info {
+  margin-left: 79px;
+  overflow: hidden;
+}
+
+.container .track_box ul li .product_info .product_name {
+  display: block;
+  width: 100%;
+  max-height: 70px;
+  overflow: hidden;
+}
+
+.container .track_box ul li .product_info .product_name a {
+  color: lime;
+  font-size: 13px;
+}
+
+.container .track_box ul li .product_info .product_name p {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #ec3e7d;
+  font-size: 13px;
+}
+
+.container .track_box ul li .product_info .product_name p del {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.container .pro_main {
+  width: 920px;
+  margin-bottom: 30px;
+  float: right;
+}
+
+.container .pro_main #pro_top {
+  background: #fff;
+  height: 50px;
+  margin-bottom: 26px;
+}
+
+.container .pro_main #pro_top .pro_ul li {
+  font-size: 14px;
+  float: left;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+.container .pro_main #pro_top .pro_ul li .pro_li {
+  color: #555c67;
+  border: 1px solid white;
+  display: block;
+  padding: 2px 26px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 16px;
+}
+
+.container .pro_main #pro_top .pro_ul .cart_li {
+  float: right;
+  width: 260px;
+  margin: 0;
+}
+
+.container .pro_main #pro_top .pro_ul .cart_li .cart_btn {
+  background: #ec3e7d;
+  padding: 0px 20px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 16px;
+  float: right;
+  border-radius: 0;
+}
+
+.container .pro_main .fix {
+  width: 920px;
+  position: fixed;
+  top: 0;
+  z-index: 120;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container .pro_main .pro_box {
+  background-color: #fff;
+  margin-bottom: 26px;
+  padding: 20px;
+}
+
+.container .pro_main .pro_box img {
+  width: 100%;
+  height: 100%;
+}

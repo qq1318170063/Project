@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rms</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+        }
+
+        .header {
+            background: #333;
+            width: 100%;
+            height: 60px;
+            font-size: 30px;
+            background: #1F262D;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            line-height: 60px;
+            padding-left: 30px;
+            color: #ddd;
+        }
+
+        .content {
+            height: auto;
+            width: 100%;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .left {
+            width: 16%;
+            height: auto;
+            background-color: #2E363F;
+            float: left;
+        }
+
+        .left ul h4 {
+            padding: 12px 0 12px 26px;
+            height: 100%;
+            font-size: 13px;
+            cursor: pointer;
+            background: #2E363F;
+            color: #939DA8;
+            border-bottom: 1px solid #222;
+
+        }
+
+        .left ul  .child_ul {
+            display: none;
+            background: #1E242B;
+        }
+
+        .left ul .child_ul li {
+            height: 40px;
+            line-height: 40px;
+            padding-left: 46px;
+            cursor: pointer;
+            color: #939DA8;
+            font-size: 13px;
+            position: relative;
+        }
+        .left ul .child_ul li::after{
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            border: 5px solid #ccc;
+            border-top-color: #1E242B;
+            border-bottom-color: #1E242B;
+            border-right-color: #1E242B;
+            position: absolute;
+            left: 20px;
+            top: 15px;
+        }
+        .left ul .child_ul .active::after{
+            border-top-color: #28B779;
+            border-bottom-color: #28B779;
+            border-right-color: #28B779;
+        }
+
+        .right {
+            width: 84%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .left ul .child_ul .active {
+            background: #28B779;
+            z-index: 1;
+            color: #fff;
+        }
+
+        .list .curren {
+            background: #8888;
+            z-index: 1;
+            color: #fff;
+        }
+
+        .list .acww {
+            background: #8888;
+            z-index: 1;
+            color: #fff;
+        }
+        
+      
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>xx电商管理系统平台</h1>
+    </div>
+    <div class="content">
+        <div class="left">
+            <ul class="list">
+                <h4 class="acww">控制面板</h4>
+                <ul class="child_ul">
+                    <!-- <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li> -->
+                </ul>
+
+                <h4>表单</h4>
+                <ul class="child_ul">
+                    <li>用户管理</li>
+                    <li>添加新用户</li>
+                    <li>修改密码</li>
+                    <li>测试使用</li>
+                    <li>订单信息表</li>
+                </ul>
+
+                <h4>商品信息管理</h4>
+                <ul class="child_ul">
+                    <li>按钮&图标</li>
+                    <li>页面布局</li>
+                    <li>表格</li>
+                    <li>插件</li>
+                    <li>元素</li>
+                </ul>
+
+                <h4>其他组件</h4>
+                <ul class="child_ul">
+                    <li>图片墙</li>
+                    <li>日历</li>
+                    <li>聊天</li>
+                    <li>清单示例</li>
+                </ul>
+
+                <h4>错误页面</h4>
+                <ul class="child_ul">
+                    <!-- <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li> -->
+                </ul>
+            </ul>
+        </div>
+        <div>
+            <iframe width="84%" id="iright" src="html/usercontrol.html" frameborder="0"></iframe>
+        </div>
+        <div class="right">
+
+        </div>
+    </div>
+    <!-- <div class="footer">底部视图</div> -->
+</body>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script>
+    $(function () {
+        //左右内容的高度
+        $('.left ').height($(window).height() - 60);
+        $('#iright').height($(window).height() - 65);
+
+        $(".left>ul>h4").on('click', function () {
+            $(this).next().slideToggle();
+        });
+        $(".child_ul").hide();
+        $(".left>ul>h4").on('click', function () {
+            $(this).addClass('curren').siblings().removeClass('curren');
+        });
+        $(".left>ul>h4").on('mouseover', function () {
+            $(this).addClass('curren').siblings().removeClass('curren');
+        });
+
+        //切换子页面
+        let arr = ['html/usercontrol.html', 'html/userinf.html'];
+        $(".child_ul>li").on("click", function () {
+            $(this).addClass('active').siblings().removeClass('active');
+            let url = arr[$('li').index(this)];
+            $('#iright').attr('src', url);
+        });
+        
+    });
+</script>
+
+</html>

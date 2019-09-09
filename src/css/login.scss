@@ -1,0 +1,53 @@
+.sasa_regwrap{
+    .sasa_regbgi{
+        .regbox{
+            .regbox_item{
+                .reginput{
+                    form{
+                        ul{
+                            // li{
+
+                            // }
+                            li:nth-child(4){
+                                height: 51px;
+                                p{
+                                    
+                                    line-height: 51px;
+                                    a{
+                                        color:#ed3f7e;
+                                        margin-left: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .other_login{
+                        padding-top: 20px;
+                        p{
+                            font-size: 14px;
+                        }
+                        ul{
+                            li{
+                                float: left;
+                                width: 115px;
+                                margin: 0;
+                                font-size: 12px;
+                                line-height: 51px;
+                               padding:10px 0;
+                               a{
+                                   color:#3e3e3e;
+                                   img{
+                                    vertical-align: middle;
+                                    margin-right: 5px;
+                                    height: 35px;
+                                   }
+                               }
+                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

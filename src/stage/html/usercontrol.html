@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>usercontrol</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        #header {
+            width: 100%;
+            height: 30px;
+        }
+
+        #header a {
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 30px;
+            padding-left: 40px;
+        }
+
+        .banner {
+            width: 100%;
+            height: auto;
+            margin: auto;
+            background: #EEEEEE;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 20px;
+            width: 95%;
+            border-bottom: 2px solid orangered;
+            padding: 10px 0 10px 0;
+            margin: auto;
+        }
+
+        .banner table {
+            border-collapse: collapse;
+            width: 95%;
+            border: 1px solid #ccc;
+            box-shadow: 1px 0px 1px 1px #ccc;
+            margin: 20px auto;
+        }
+
+        thead td {
+            border: 1px solid #ccc;
+            padding: 8px 0 8px 15px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        td:nth-child(1) {
+            text-align: center;
+            padding: 0;
+            width: 40px;
+        }
+
+        td:nth-child(2) {
+            width: 60px;
+        }
+
+        td:nth-child(3) {
+            width: 120px;
+        }
+
+        td:nth-child(4) {
+            width: 160px;
+        }
+
+        td:nth-child(5) {
+            width: 280px;
+        }
+
+        input {
+            width: 14px;
+            height: 14px;
+        }
+
+        th {
+            border: 1px solid #ccc;
+            padding: 8px;
+            font-size: 12px;
+        }
+
+        thead tr:nth-child(2) {
+            background-color: #EFEFEF;
+        }
+
+        tbody td {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px 0 10px 0px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        span {
+            color: #fff;
+            line-height: 30px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        span:nth-child(1) {
+            width: 80px;
+            height: 30px;
+            background: #51A351;
+        }
+
+        span:nth-child(2) {
+            width: 60px;
+            height: 30px;
+            background: #DA4F49;
+        }
+
+        span:nth-child(3) {
+            width: 60px;
+            height: 30px;
+            background: #2F96B4;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"><a href="">主页</a>
+    </div>
+    <div class="banner">
+        <h1>用户信息管理</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <td><input type="checkbox" name="" id="all"></td>
+                    <td colspan="5">用户信息表</td>
+                    <!-- <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> 
+                        <td></td> -->
+                </tr>
+                <tr>
+                    <th>&uarr;</th>
+                    <th>id</th>
+                    <th>用户名</th>
+                    <th>密码</th>
+                    <th>邮箱</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody class="s_tbody">
+                <!-- <tr class="s_tr">
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>1</td>
+                    <td>张学友</td>
+                    <td>11112</td>
+                    <td>1231313@qq.com</td>
+                    <td>
+                        <span class="amend">修改并保存</span>
+                        <span class="delete">删除</span>
+                        <span class="edit">Edit</span>
+                    </td>
+                </tr> -->
+                <!-- <td contenteditable="true"></td> -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script>
+    $(function () {
+        $.ajax({
+            type: 'get',
+            url: '../api/query.php',
+            success: str => {
+                let arr = JSON.parse(str);
+                // console.log(arr);
+                let html = arr.map(item => {
+                    return ` <tr class="s_tr" data-id = "${item.id}">
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>${item.id}</td>
+                    <td contenteditable="true" class="s_td">${item.username}</td>
+                    <td contenteditable="true">${item.password}</td>
+                    <td contenteditable="true">${item.email}</td>
+                    <td>
+                        <span class="amend">修改并保存</span>
+                        <span class="delete">删除</span>
+                        <span class="edit">Edit</span>
+                    </td>
+                </tr>`
+                });
+                $('.s_tbody').append(html);
+            }
+        });
+
+        $('.s_tbody').on('click','.delete',function(){
+            let name = $('.s_td').html();
+            let id = $(this).closest('.s_tr').attr('data-id');
+            console.log(id,name)
+            $.ajax({
+                type : 'get',
+                url : '../api/delect.php',
+                data:{
+                    id : id,
+                    name : name
+                } ,
+                success : str =>{
+                    console.log(str);
+                    alert('确定要删除当行吗');
+                } 
+            });
+
+        })
+    });
+</script>
+
+</html>

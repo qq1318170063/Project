@@ -1,0 +1,39 @@
+.sasa_regwrap .sasa_regbgi .regbox .regbox_item .reginput form ul li:nth-child(4) {
+  height: 51px;
+}
+
+.sasa_regwrap .sasa_regbgi .regbox .regbox_item .reginput form ul li:nth-child(4) p {
+  line-height: 51px;
+}
+
+.sasa_regwrap .sasa_regbgi .regbox .regbox_item .reginput form ul li:nth-child(4) p a {
+  color: #ed3f7e;
+  margin-left: 15px;
+}
+
+.sasa_regwrap .sasa_regbgi .regbox .regbox_item .reginput .other_login {
+  padding-top: 20px;
+}
+
+.sasa_regwrap .sasa_regbgi .regbox .regbox_item .reginput .other_login p {
+  font-size: 14px;
+}
+
+.sasa_regwrap .sasa_regbgi .regbox .regbox_item .reginput .other_login ul li {
+  float: left;
+  width: 115px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 51px;
+  padding: 10px 0;
+}
+
+.sasa_regwrap .sasa_regbgi .regbox .regbox_item .reginput .other_login ul li a {
+  color: #3e3e3e;
+}
+
+.sasa_regwrap .sasa_regbgi .regbox .regbox_item .reginput .other_login ul li a img {
+  vertical-align: middle;
+  margin-right: 5px;
+  height: 35px;
+}
